@@ -1,7 +1,6 @@
-import os, glob, sys, threading # I would call that OGST
-sys.setrecursionlimit(10**7) # max depth of recursion
-threading.stack_size(2**27)  # new thread will get stack of such size
+import os, glob
 def addhome(page):
+   try:
       if os.path.isfile(page):
        with open(page, "a+") as file:
         if page.endswith(".md"):
@@ -12,6 +11,8 @@ def addhome(page):
       else:
         for i in glob.glob(page):
           addhome(i)
+   except:
+      pass
 
 for i in glob.glob(f"{os.getcwd()}/*"):
  if i != f"{os.getcwd()}/index.md":
