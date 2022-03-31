@@ -19,26 +19,8 @@ jobs:
       - name: Build base site
         uses: Tyler887/jekyllbuild@main
       
-      - name: Upload
-        uses: actions/upload-artifact@v3
-        with:
-           name: gh-pages
-           path: ${{ github.workspace }}/_site
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download build
-        uses: actions/download-artifact@v3
-        with:
-          name: gh-pages
-          path: ${{ github.workspace }}/deployed
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: ghpages # The branch the action should deploy to.
-          folder: deployed # The folder the action should deploy.
-      - name: Remove deployment artifact
-        uses: GeekyEggo/delete-artifact@v1.0.0
-        with:
-           name: ghpages
+          folder: _site # The folder the action should deploy.
