@@ -9,8 +9,3 @@ for i in glob.glob(f"{os.getcwd()}/typos/*.md"):
   print(f"Adding to index: {i.basename()}")
   with open(f"{os.getcwd()}/map.md", "w") as index:
     index.write(f"* [Entry file {i.basename} in Typoqsuat](/typos/{i.basename})\n")
-print("Pushing index file to github...")
-os.system("git add map.md")
-os.system("git commit -m \"generate index\"")
-os.system("git push")
-print("Generated index.")
