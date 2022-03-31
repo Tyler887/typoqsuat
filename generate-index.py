@@ -8,4 +8,5 @@ with open(f"{os.getcwd()}/map.md", "w") as index:
 for i in glob.glob(f"{os.getcwd()}/typo/*.md"):
   print(f"Adding to index: {os.path.basename(i)}")
   with open(f"{os.getcwd()}/map.md", "w") as index:
-    index.write(f"{open(f"{os.getcwd()}/map.md", "r").read()}\n* [Entry file {os.path.basename(i)} in Typoqsuat](/typos/{os.path.basename(i).replace(".md", ".html"})\n")
+    indexold = indexold = open(f"{os.getcwd()}/map.md", "r").read()
+    index.write(f"{indexold}\n* [Entry file {os.path.basename(i)} in Typoqsuat](/typos/{os.path.basename(i).replace(".md", ".html"})\n")
