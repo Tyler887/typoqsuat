@@ -4,7 +4,7 @@ def addhome(page):
       if os.path.isfile(page):
        with open(page, "a+") as file:
         if page.endswith(".md"):
-         file.write(f"<a href=\"/typoqsuat\"><sub><< Home</sub></a>")
+         file.write(f"\n\n[<sub><< Home</sub>](/typoqsuat)")
          print(f"Added home button to {file}")
         else:
          print(f"Skipped {file}")
