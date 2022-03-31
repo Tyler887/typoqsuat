@@ -1,6 +1,16 @@
 import os, glob
-for i in glob.glob(f"{os.getcwd()}/*.md"):
-  with open(i, "w+") as file:
-    if i != f"{os.getcwd()}/index.md":
-      file.write(f"<a href=\"/typoqsuat\"><small><< Home</small></a>\n{file.read()}")
-      print(f"Added home button to {i}")
+def addhome(page):
+      if os.path.isfile(page):
+       with open(page, "a+") as file:
+        if page.endswith(".md"):
+         file.write(f"<a href=\"/typoqsuat\"><sub><< Home</sub></a>")
+         print(f"Added home button to {i}")
+        else:
+         print(f"Skipped {i}")
+      else:
+        for i in glob.glob(page):
+          addhome(i)
+
+for i in glob.glob(f"{os.getcwd()}/*"):
+ if i != f"{os.getcwd()}/index.md":
+  addhome(i)
