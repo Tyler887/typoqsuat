@@ -1,1 +1,2 @@
-* [Entry file wkpedia.md in Typoqsuat](/typos/wkpedia.md)
+
+* [Entry file wkpedia.md in Typoqsuat](/typos/wkpedia.html)
