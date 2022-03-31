@@ -25,6 +25,7 @@ jobs:
            name: gh-pages
            path: ${{ github.workspace }}/_site
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Download build
