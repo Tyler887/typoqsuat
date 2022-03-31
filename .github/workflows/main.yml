@@ -1,7 +1,7 @@
 name: Build and Deploy
 on: [push]
 jobs:
-  build-and-deploy:
+  build:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
     steps:
@@ -18,9 +18,26 @@ jobs:
       
       - name: Build base site
         uses: Tyler887/jekyllbuild@main
-        
+      
+      - name: Upload
+        uses: actions/upload-artifact@v3
+        with:
+           name: gh-pages
+           path: ${{ github.workspace }}/_site
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build
+        uses: actions/download-artifact@v3
+        with:
+          name: gh-pages
+          path: ${{ github.workspace }}/deployed
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: ghpages # The branch the action should deploy to.
-          folder: _site # The folder the action should deploy.
+          folder: deployed # The folder the action should deploy.
+      - name: Remove deployment artifact
+        uses: GeekyEggo/delete-artifact@v1.0.0
+        with:
+           name: ghpages
