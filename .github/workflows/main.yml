@@ -12,7 +12,7 @@ jobs:
         run: python generate-index.py
       
       - name: Build base site
-        uses: Tyler887/jekyllbuild
+        uses: Tyler887/jekyllbuild@main
         
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.5
