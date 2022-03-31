@@ -16,6 +16,9 @@ jobs:
       - name: Build index
         run: python generate-index.py
       
+      - name: Add home buttons
+        run: python generate-home-buttons.py
+      
       - name: Build base site
         uses: Tyler887/jekyllbuild@main
       
