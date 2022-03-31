@@ -10,4 +10,4 @@ Domains are very abused by hackers, usally through typosquatting. Examples of ty
 
 This site is called *Typoqsuat* because of high amounts of typosquatting domains.
 
-For a full list of entries, see [the map](map.html).
+For a full list of entries, see [the index](map.html).
