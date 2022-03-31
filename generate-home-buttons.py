@@ -5,9 +5,9 @@ def addhome(page):
        with open(page, "a+") as file:
         if page.endswith(".md"):
          file.write(f"\n\n[<sub><< Home</sub>](/typoqsuat)")
-         print(f"Added home button to {file}")
+         print(f"Added home button to {file}!\n")
         else:
-         print(f"Skipped {file}")
+         print(f"Skipped {file}.\n")
       else:
         for i in glob.glob(page):
           addhome(i)
@@ -17,3 +17,4 @@ def addhome(page):
 for i in glob.glob(f"{os.getcwd()}/*"):
  if i != f"{os.getcwd()}/index.md":
   addhome(i)
+print("Generated home buttons!")
