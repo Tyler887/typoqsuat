@@ -11,5 +11,5 @@ For a full list of entries, see [the index](map.html).
 
 You can **copy Typoqsuat content** [subject to a few conditions](copyright).
 ## Warning
-**Not all incorrect domains are typos.** For example, `git-hub.com` redirects to `github.com` (same for that WIP `github.co` redirect, and
+**Not all incorrect domains are typos.** For example, `git-hub.com` redirects to `github.com` (same for that WIP `github.co` redirect), and
 `goo.gle` redirects to `www.google.com`.
