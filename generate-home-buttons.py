@@ -8,13 +8,15 @@ def addhome(page):
          print(f"Added home button to {file}!\n")
         else:
          print(f"Skipped {file}.\n")
-      else:
-        for i in glob.glob(page):
-          addhome(i)
    except:
       pass
 
 for i in glob.glob(f"{os.getcwd()}/*"):
  if i != f"{os.getcwd()}/index.md":
   addhome(i)
+print("Generating home buttons for entries.")
+
+for i in glob.glob(f"{os.getcwd()}/typo/*"):
+  addhome(i)
+
 print("Generated home buttons!")
