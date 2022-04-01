@@ -20,3 +20,5 @@ This site is called *Typoqsuat* because of high amounts of typosquatting domains
 ```
 
 For a full list of entries, see [the index](map.html).
+
+You can copy Typoqsuat content [subject to a few conditions](copyright).
