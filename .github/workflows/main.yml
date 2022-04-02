@@ -5,7 +5,7 @@ on:
 jobs:
   build:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
-    runs-on: deploy-runner
+    runs-on: ubuntu-latest
     steps:
       - name: Install rsync
         run: |
