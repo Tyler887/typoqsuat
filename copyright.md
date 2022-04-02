@@ -1,5 +1,5 @@
 ---
-title: License
+title: Typoqsuat's license
 ---
 Two parts of the Typoqsuat repo use two licenses.
 ## Deployed content
