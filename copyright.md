@@ -1,8 +1,8 @@
 ---
 title: Typoqsuat's license
 ---
-Two parts of the Typoqsuat repo use two licenses.
 ## Deployed content
+The following license applies to content deployed to the site:
 ```
 Attribution 4.0 International
 
@@ -401,6 +401,7 @@ licenses.
 Creative Commons may be contacted at creativecommons.org.
 ```
 ## Code
+The following license applies to the code:
 ```
 MIT License
 
