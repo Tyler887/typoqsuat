@@ -1,0 +1,8 @@
+# Data for entry wkpedia.md.
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+domain:         "wkpedia.org"
+server:         "Apache/2.4.6 (CentOS) PHP/5.4.16"
+digicert:       false
+notes_plain:    "Originally a mirror of wikipedia.org, but took over by a hacker and was made a dangerous page. Do not visit wkpedia.org."
+notes_markdown: "Originally a mirror of wikipedia.org, but took over by a hacker and was made a dangerous page. ***Do not visit wkpedia.org.***"
+squatted_from: 	"wikipedia.org"

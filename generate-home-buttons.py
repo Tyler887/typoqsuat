@@ -5,7 +5,7 @@ def addhome(page):
       if os.path.isfile(page):
        with open(page, "a+") as file:
         if page.endswith(".md"):
-         file.write(f"\n\n[<sub><< Home</sub>](/typoqsuat)")
+         file.write(f"\n\n[<div align=\"center\"><sub><i><< Back to home...</i></sub></div>](/typoqsuat)")
          print(f"{Fore.GREEN}Added{Style.RESET_ALL} home button to {file}!\n")
         else:
          print(f"{Fore.YELLOW}Skipped{Style.RESET_ALL} {file}.\n")
