@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Eat Package Manager
-        uses: EatInstall/GitHub-Setup@v1.0
+        uses: EatInstall/GitHub-Setup@main
 
       - name: Install rsync
         run: |
