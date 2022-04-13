@@ -22,4 +22,4 @@ Likewise, this README is also licensed under CC BY.
 [licensing]: https://tyler887.github.io/typoqsuat/copyright
 
 
-[<div align="center"><sub><i><< Back to home...</i></sub></div>](/typoqsuat)
+[<sub><i><< Back to home...</i></sub>](/typoqsuat)
