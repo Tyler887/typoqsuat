@@ -1,5 +1,5 @@
 ---
-title: Record for wkpedia.org
+title: (Outdated) Record for wkpedia.org
 ---
 **Note: The scope and actions of this page has definitly changed, so this entry is 
 no longer in the scope of the site. It could be a bug in the Apache server,
